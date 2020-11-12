@@ -6,6 +6,13 @@
     font-display: swap;
 }
 @font-face {
+    font-family: 'Plaak Regular';
+    src: url('fonts/Plaak-36-Ney-Regular-205TF.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
     font-family: 'Plaak Light';
     src: url('fonts/Plaak-26-Ney-Light-205TF.woff2') format('woff2');
     font-weight: 400;
@@ -56,7 +63,7 @@ body {
 }
 .bc_page {
     overflow-x: hidden;
-    padding-top: 100px;
+    /* padding-top: 100px; */
 }
 
 /* Block with banner */
@@ -66,17 +73,25 @@ body {
 }
 .bc_page .bc_banner {
     background: #fafafa;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+}
+.bc_page .bc_banner .bc_paragraph {
+    width: 100%;
+    max-width: 500px;
 }
 .bc_page .bc_image-block {
     background: url("images/bc-banner-bg.jpg");
-    background-size: 400px auto;
+    background-size: 320px auto;
     background-repeat: no-repeat;
     /* background-position: right; */
-    width: 33%;
+    /* width: 33%; */
     padding: 0 0 50px 75px;
 }
 .bc_page .bc_banner-image {
-    width: 400px;
+    width: 320px;
     margin-top: -50px;
 }
 .bc_page .bc_container {
@@ -91,7 +106,7 @@ body {
 .bc_page .bc_text-block{
     width: 100%;
     max-width: 615px;
-    padding: 107px 0 23px 0;
+    /* padding: 107px 0 23px 0; */
 }
 .bc_page .bc_decorator {
     display: block;
@@ -108,11 +123,11 @@ body {
 }
 .bc_page .bc_paragraph {
     font-family: 'GT Sectra', Arial, sans-serif;
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 16px;
+    line-height: 30px;
 }
 .bc_page .bc_paragraph.small {
-    font-size: 18px;
+    font-size: 16px;
 }
 .bc_page .bc_buttons_wrapper{
     margin: 36px 0 0 0;
@@ -154,15 +169,15 @@ body {
 .bc_page .bc_button.light:hover,
 .bc_page .bc_button.light:active, 
 .bc_page .bc_button.light:focus {
-    background: #69FF46;
-    color: #000;
+    background: #000;
+    color: #fff;
     text-decoration: none;
-    border: 2px solid #69FF46;
+    border: 2px solid #000;
 }
 .bc_page .poweredBy {
     font-size: 16px;
     color: #999;
-    margin-top: 90px;
+    margin-top: 60px;
     display: inline-block;
 }
 .bc_page .poweredBy a {
@@ -186,7 +201,8 @@ body {
     text-align: center;
     font-family: 'GT Sectra', 'Times New Roman', serif;
     font-weight: 400;
-    font-size: 50px;
+    font-size: 40px;
+    margin: 0;
 }
 .bc_page .bc_step-block,
 .bc_page .bc_benefit-block {
@@ -195,10 +211,10 @@ body {
     width: 100%;
 }
 .bc_page .bc_step-block {
-    margin-top: 103px;
+    margin-top: 90px;
 }
 .bc_page .bc_benefit-block {
-    margin-top: 88px;
+    margin-top: 40px;
     justify-content: space-around;
 }
 .bc_page .bc_step-block.reverse,
@@ -214,14 +230,14 @@ body {
     width: 100%;
 }
 .bc_page .bc_step-text {
-    max-width: 587px;
+    max-width: 452px;
 }
 .bc_page .bc_benefit-text {
-    max-width: 532px;
+    max-width: 452px;
 }
 .bc_page .bc_step-number {
-    font-size: 26px;
-    font-family: 'Plaak Light', sans-serif;
+    font-size: 16px;
+    font-family: 'Plaak Regular', sans-serif;
     letter-spacing: 0.15em;
 }
 .bc_page .bc_step-title,
@@ -239,6 +255,10 @@ body {
 .bc_benefit-block.reverse .bc_benefit-image {
     margin-left: 30px;
     margin-right: 0;
+}
+.bc_benefit-block .bc_benefit-image,
+.bc_benefit-block.reverse .bc_benefit-image {
+    max-width: 400px;
 }
 .bc_page .bc_step-title {
     font-size: 32px;
@@ -271,10 +291,10 @@ body {
 
 /* Block with tabs */
 .bc_page .bc_faq {
-    padding: 155px 0 0 0;
+    padding: 60px 0 0 0;
 }
 .bc_page .bc_faq .bc_subtitle {
-    margin-bottom: 79px;
+    margin-bottom: 60px;
 }
 .bc_page .bc_faq .bc_container {
     flex-direction: column;
@@ -314,7 +334,7 @@ body {
     border-radius: 12px;
     width: 100%;
     max-width: 806px;
-    padding: 27px 30px;
+    padding: 20px 25px;
     margin-bottom: 15px;
 }
 .bc_page .bc_tabs-section_wrapper.active {
@@ -325,15 +345,15 @@ body {
     justify-content: space-between;
 }
 .bc_page .bc_question {
-    font-family: 'Plaak Heavy', Arial, sans-serif;
+    font-family: 'Plaak Regular', Arial, sans-serif;
     font-weight: 900;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 40px;
 }
 .bc_page .bc_answer {
-    font-size: 20px;
-    line-height: 36px;
-    padding-top: 12px;
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 5px;
     display: inline-block;
     width: 86%;
 }
@@ -343,10 +363,12 @@ body {
     flex-direction: column;
     align-items: center;
     border-bottom: 1px solid #C4CBD2;
-    padding-bottom: 196px;
+    padding-bottom: 60px;
+    padding-top: 40px;
 }
 .bc_page .bc_try-now .bc_button.light {
     width: 193px;
+    margin-top: 40px;
 }
 /* BC footer */
 .bc_page .bc_footer .bc_container {
