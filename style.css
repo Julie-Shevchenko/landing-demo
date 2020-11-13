@@ -1,26 +1,19 @@
 @font-face {
-    font-family: 'Plaak Heavy';
+    font-family: 'Plaak - 56-Ney-Heavy-205TF';
     src: url('fonts/Plaak-56-Ney-Heavy-205TF.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Plaak Regular';
+    font-family: 'Plaak - 36-Ney-Regular-205TF';
     src: url('fonts/Plaak-36-Ney-Regular-205TF.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Plaak Light';
-    src: url('fonts/Plaak-26-Ney-Light-205TF.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'GT Sectra';
+    font-family: 'GT-Sectra-Fine-Book';
     src: url('fonts/GT-Sectra-Fine-Book.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
@@ -58,7 +51,7 @@
 body {
     margin: 0;
     color: #2B2B2B;
-    font-family: 'GT Sectra', 'Avenir', Arial, sans-serif;
+    font-family: 'GT-Sectra-Fine-Book', 'Avenir', Arial, sans-serif;
     font-weight: 400;
 }
 .bc_page {
@@ -116,13 +109,13 @@ body {
 }
 .bc_page h2.bc_title {
     font-size: 60px;
-    font-family: 'GT Sectra', 'Times New Roman', serif;
+    font-family: 'GT-Sectra-Fine-Book', 'Times New Roman', serif;
     font-weight: 400;
     padding: 35px 0 0 0;
     margin: 0;
 }
 .bc_page .bc_paragraph {
-    font-family: 'GT Sectra', Arial, sans-serif;
+    font-family: 'GT-Sectra-Fine-Book', Arial, sans-serif;
     font-size: 16px;
     line-height: 30px;
 }
@@ -199,7 +192,7 @@ body {
 }
 .bc_page .bc_subtitle {
     text-align: center;
-    font-family: 'GT Sectra', 'Times New Roman', serif;
+    font-family: 'GT-Sectra-Fine-Book', 'Times New Roman', serif;
     font-weight: 400;
     font-size: 40px;
     margin: 0;
@@ -237,12 +230,12 @@ body {
 }
 .bc_page .bc_step-number {
     font-size: 16px;
-    font-family: 'Plaak Regular', sans-serif;
+    font-family: 'Plaak - 36-Ney-Regular-205TF', sans-serif;
     letter-spacing: 0.15em;
 }
 .bc_page .bc_step-title,
 .bc_page .bc_benefit-title {
-    font-family: 'Plaak Heavy', Arial, sans-serif;
+    font-family: 'Plaak - 56-Ney-Heavy-205TF', Arial, sans-serif;
     font-weight: 800;
     line-height: 42px;
     margin-top: 14px;
@@ -345,7 +338,7 @@ body {
     justify-content: space-between;
 }
 .bc_page .bc_question {
-    font-family: 'Plaak Regular', Arial, sans-serif;
+    font-family: 'Plaak - 36-Ney-Regular-205TF', Arial, sans-serif;
     font-weight: 900;
     font-size: 16px;
     line-height: 40px;
